@@ -20,11 +20,10 @@
     vendor/samsung/kminilte/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
     vendor/samsung/kminilte/proprietary/lib/libion_exynos.so:system/lib/libion_exynos.so \
     vendor/samsung/kminilte/proprietary/bin/macloader:system/bin/macloader \
-
+    vendor/samsung/kminilte/proprietary/lib/libexynosscaler.so:system/lib/libexynosscaler.so
+    
 ifeq ($(TARGET_USE_LESS_BLOB_FILES),false)
 PRODUCT_COPY_FILES += \
-    vendor/samsung/kminilte/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
-    vendor/samsung/kminilte/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
     vendor/samsung/kminilte/proprietary/bin/macloader:system/bin/macloader \
     vendor/samsung/kminilte/proprietary/lib/libcsc.so:system/lib/libcsc.so \
     vendor/samsung/kminilte/proprietary/lib/libexynosutils.so:system/lib/libexynosutils.so \
@@ -41,7 +40,8 @@ PRODUCT_COPY_FILES += \
 endif
     
 PRODUCT_COPY_FILES += \
-    vendor/samsung/kminilte/proprietary/lib/libexynosscaler.so:system/lib/libexynosscaler.so \
+    vendor/samsung/kminilte/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
+    vendor/samsung/kminilte/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
     vendor/samsung/kminilte/proprietary/lib/libexynosfimc.so:system/lib/libexynosfimc.so \
     vendor/samsung/kminilte/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/kminilte/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:system/app/mcRegistry/00060308060501020000000000000000.tlbin \
