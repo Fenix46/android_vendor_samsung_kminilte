@@ -22,7 +22,7 @@
     vendor/samsung/kminilte/proprietary/bin/macloader:system/bin/macloader \
     vendor/samsung/kminilte/proprietary/lib/libexynosscaler.so:system/lib/libexynosscaler.so
     
-ifeq ($(TARGET_USE_LESS_BLOB_FILES),false)
+ifeq ($(BOARD_USES_BLOB_LESS),false)
 PRODUCT_COPY_FILES += \
     vendor/samsung/kminilte/proprietary/bin/macloader:system/bin/macloader \
     vendor/samsung/kminilte/proprietary/lib/libcsc.so:system/lib/libcsc.so \
