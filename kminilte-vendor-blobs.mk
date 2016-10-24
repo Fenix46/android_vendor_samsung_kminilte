@@ -24,6 +24,8 @@
     
 ifeq ($(BOARD_USES_BLOB_LESS),false)
 PRODUCT_COPY_FILES += \
+    vendor/samsung/kminilte/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
+    vendor/samsung/kminilte/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
     vendor/samsung/kminilte/proprietary/bin/macloader:system/bin/macloader \
     vendor/samsung/kminilte/proprietary/lib/libcsc.so:system/lib/libcsc.so \
     vendor/samsung/kminilte/proprietary/lib/libexynosutils.so:system/lib/libexynosutils.so \
@@ -40,8 +42,6 @@ PRODUCT_COPY_FILES += \
 endif
     
 PRODUCT_COPY_FILES += \
-    vendor/samsung/kminilte/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
-    vendor/samsung/kminilte/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
     vendor/samsung/kminilte/proprietary/lib/libexynosfimc.so:system/lib/libexynosfimc.so \
     vendor/samsung/kminilte/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/kminilte/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:system/app/mcRegistry/00060308060501020000000000000000.tlbin \
@@ -80,19 +80,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kminilte/proprietary/etc/wifi/bcmdhd_p2p.bin_b2:system/etc/wifi/bcmdhd_p2p.bin_b2 \
     vendor/samsung/kminilte/proprietary/etc/wifi/bcmdhd_sta.bin_b2:system/etc/wifi/bcmdhd_sta.bin_b2 \
     vendor/samsung/kminilte/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/kminilte/proprietary/lib/hw/camera.universal3470.so:system/lib/hw/camera.universal3470.so \
     vendor/samsung/kminilte/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/kminilte/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/kminilte/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     vendor/samsung/kminilte/proprietary/lib/libExynosIPService.so:system/lib/libExynosIPService.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/kminilte/proprietary/lib/libwrappergps.so:system/lib/libwrappergps.so \
-    vendor/samsung/kminilte/proprietary/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
-    vendor/samsung/kminilte/proprietary/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
-    vendor/samsung/kminilte/proprietary/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
     vendor/samsung/kminilte/proprietary/lib/libMali.so:system/lib/libMali.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/hwcomposer.exynos3.so:system/lib/hw/hwcomposer.exynos3.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/gralloc.exynos3.so:system/lib/hw/gralloc.exynos3.so \
     vendor/samsung/kminilte/proprietary/lib/libdisplay.so:system/lib/libdisplay.so \
     vendor/samsung/kminilte/proprietary/lib/libdisplaymodule.so:system/lib/libdisplaymodule.so \
     vendor/samsung/kminilte/proprietary/lib/libExynosHWCService.so:system/lib/libExynosHWCService.so \
@@ -104,10 +97,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kminilte/proprietary/lib/libmpp.so:system/lib/libmpp.so \
     vendor/samsung/kminilte/proprietary/lib/libhwcutilsmodule.so:system/lib/libhwcutilsmodule.so \
     vendor/samsung/kminilte/proprietary/lib/libvirtualdisplay.so:system/lib/libvirtualdisplay.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/keystore.exynos3470.so:system/lib/hw/keystore.exynos3470.so \
     vendor/samsung/kminilte/proprietary/lib/libmaet.so:system/lib/libmaet.so \
     vendor/samsung/kminilte/proprietary/lib/libsxqk_skia.so:system/lib/libsxqk_skia.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/nfc_nci.universal3470.so:system/lib/hw/nfc_nci.universal3470.so \
     vendor/samsung/kminilte/proprietary/lib/libgdmcprov.so:system/lib/libgdmcprov.so \
     vendor/samsung/kminilte/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
     vendor/samsung/kminilte/proprietary/lib/libatparser.so:system/lib/libatparser.so \
@@ -130,6 +121,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kminilte/proprietary/lib/libvcsfp.so:system/lib/libvcsfp.so \
     vendor/samsung/kminilte/proprietary/lib/libvfmClient.so:system/lib/libvfmClient.so \
     vendor/samsung/kminilte/proprietary/lib/libvfmtztransport.so:system/lib/libvfmtztransport.so \
+    vendor/samsung/kminilte/proprietary/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
+    vendor/samsung/kminilte/proprietary/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
+    vendor/samsung/kminilte/proprietary/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/camera.universal3470.so:system/lib/hw/camera.universal3470.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/keystore.exynos3470.so:system/lib/hw/keystore.exynos3470.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/nfc_nci.universal3470.so:system/lib/hw/nfc_nci.universal3470.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/hwcomposer.exynos3.so:system/lib/hw/hwcomposer.exynos3.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/gralloc.exynos3.so:system/lib/hw/gralloc.exynos3.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/hwcomposer.exynos3.so:system/lib/hw/hwcomposer.exynos3.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/gralloc.exynos3.so:system/lib/hw/gralloc.exynos3.so \
     vendor/samsung/kminilte/proprietary/media/lcd_density.txt:system/media/lcd_density.txt \
     vendor/samsung/kminilte/proprietary/media/wireless_left.spi:system/media/wireless_left.spi \
     vendor/samsung/kminilte/proprietary/media/wireless_right.spi:system/media/wireless_right.spi \
