@@ -42,6 +42,7 @@ PRODUCT_COPY_FILES += \
 endif
     
 PRODUCT_COPY_FILES += \
+    vendor/samsung/kminilte/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/kminilte/proprietary/lib/libexynosfimc.so:system/lib/libexynosfimc.so \
     vendor/samsung/kminilte/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/kminilte/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:system/app/mcRegistry/00060308060501020000000000000000.tlbin \
