@@ -38,12 +38,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kminilte/proprietary/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
     vendor/samsung/kminilte/proprietary/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
     vendor/samsung/kminilte/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    vendor/samsung/kminilte/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so
+    vendor/samsung/kminilte/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/camera.universal3470.so:system/lib/hw/camera.universal3470.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/gralloc.universal3470.so:system/lib/hw/gralloc.universal3470.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
+    vendor/samsung/kminilte/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so
 endif
     
 PRODUCT_COPY_FILES += \
     vendor/samsung/kminilte/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/kminilte/proprietary/lib/libexynosfimc.so:system/lib/libexynosfimc.so \
+    vendor/samsung/kminilte/proprietary/lib/libexynosscaler.so:system/lib/libexynosscaler.so \
     vendor/samsung/kminilte/proprietary/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/kminilte/proprietary/app/mcRegistry/00060308060501020000000000000000.tlbin:system/app/mcRegistry/00060308060501020000000000000000.tlbin \
     vendor/samsung/kminilte/proprietary/app/mcRegistry/02010000080300030000000000000000.tlbin:system/app/mcRegistry/02010000080300030000000000000000.tlbin \
@@ -101,7 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kminilte/proprietary/lib/libmaet.so:system/lib/libmaet.so \
     vendor/samsung/kminilte/proprietary/lib/libsxqk_skia.so:system/lib/libsxqk_skia.so \
     vendor/samsung/kminilte/proprietary/lib/libgdmcprov.so:system/lib/libgdmcprov.so \
-    vendor/samsung/kminilte/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
     vendor/samsung/kminilte/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     vendor/samsung/kminilte/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/kminilte/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
@@ -125,14 +129,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kminilte/proprietary/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
     vendor/samsung/kminilte/proprietary/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
     vendor/samsung/kminilte/proprietary/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/camera.universal3470.so:system/lib/hw/camera.universal3470.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/keystore.exynos3470.so:system/lib/hw/keystore.exynos3470.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/keystore.universal3470.so:system/lib/hw/keystore.universal3470.so \
     vendor/samsung/kminilte/proprietary/lib/hw/nfc_nci.universal3470.so:system/lib/hw/nfc_nci.universal3470.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/hwcomposer.exynos3.so:system/lib/hw/hwcomposer.exynos3.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/gralloc.exynos3.so:system/lib/hw/gralloc.exynos3.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/hwcomposer.exynos3.so:system/lib/hw/hwcomposer.exynos3.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/gralloc.exynos3.so:system/lib/hw/gralloc.exynos3.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/hwcomposer.universal3470.so:system/lib/hw/hwcomposer.universal3470.so \
     vendor/samsung/kminilte/proprietary/media/lcd_density.txt:system/media/lcd_density.txt \
     vendor/samsung/kminilte/proprietary/media/wireless_left.spi:system/media/wireless_left.spi \
     vendor/samsung/kminilte/proprietary/media/wireless_right.spi:system/media/wireless_right.spi \
