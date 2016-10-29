@@ -40,14 +40,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kminilte/proprietary/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
     vendor/samsung/kminilte/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/kminilte/proprietary/lib/hw/camera.universal3470.so:system/lib/hw/camera.universal3470.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/gralloc.universal3470.so:system/lib/hw/gralloc.universal3470.so \
     vendor/samsung/kminilte/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/samsung/kminilte/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/hwcomposer.universal3470.so:system/lib/hw/hwcomposer.universal3470.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/keystore.universal3470.so:system/lib/hw/keystore.universal3470.so \    
+    vendor/samsung/kminilte/proprietary/lib/hw/keystore.universal3470.so:system/lib/hw/keystore.universal3470.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/audio.primary.kminilte.so:system/lib/hw/audio.primary.kminilte.so
 endif
     
 PRODUCT_COPY_FILES += \
+    vendor/samsung/kminilte/proprietary/lib/hw/nfc_nci.universal3470.so:system/lib/hw/nfc_nci.universal3470.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/gralloc.universal3470.so:system/lib/hw/gralloc.universal3470.so \
+    vendor/samsung/kminilte/proprietary/lib/hw/hwcomposer.universal3470.so:system/lib/hw/hwcomposer.universal3470.so \
     vendor/samsung/kminilte/proprietary/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     vendor/samsung/kminilte/proprietary/lib/libexynosfimc.so:system/lib/libexynosfimc.so \
     vendor/samsung/kminilte/proprietary/lib/libexynosscaler.so:system/lib/libexynosscaler.so \
@@ -131,7 +133,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kminilte/proprietary/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
     vendor/samsung/kminilte/proprietary/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
     vendor/samsung/kminilte/proprietary/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so \
-    vendor/samsung/kminilte/proprietary/lib/hw/nfc_nci.universal3470.so:system/lib/hw/nfc_nci.universal3470.so \
     vendor/samsung/kminilte/proprietary/media/wireless_left.spi:system/media/wireless_left.spi \
     vendor/samsung/kminilte/proprietary/media/wireless_right.spi:system/media/wireless_right.spi \
     vendor/samsung/kminilte/proprietary/media/battery_cover.spi:system/media/battery_cover.spi \
